@@ -2,6 +2,6 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-export default function Main() {
-	return <h1>Hello Main</h1>;
+export default function Main({ match }) {
+	return <h1>{match.params.id}</h1>;
 }
